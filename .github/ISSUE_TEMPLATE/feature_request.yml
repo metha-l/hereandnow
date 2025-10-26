@@ -1,0 +1,27 @@
+name: ✨ Feature
+description: 새로운 기능 구현 요청
+labels: [enhancement, feat]
+title: "[FEAT] "
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: "## 💼 작업 설명"
+      description: 진행할 작업을 설명해주세요.
+      placeholder: 예) 회원가입/로그인 화면 및 API 연동
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: "## ✅ To do"
+      description: 필요한 투두를 적어주세요.
+      value: |
+        - [ ] 
+        - [ ] 
+  - type: input
+    id: issue-prefix
+    attributes:
+      label: 제목 규칙
+      description: 제목은 `[FEAT] ...` 형식으로 작성됩니다.
+      placeholder: 예) [FEAT] 회원가입/로그인 구현

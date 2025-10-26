@@ -1,0 +1,19 @@
+name: 📝 Docs
+description: 문서 추가/수정/삭제
+labels: [documentation, docs]
+title: "[DOCS] "
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: "## 💼 작업 설명"
+      placeholder: 예) README에 개발/커밋/브랜치 컨벤션 추가
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: "## ✅ To do"
+      value: |
+        - [ ] 
+        - [ ] 

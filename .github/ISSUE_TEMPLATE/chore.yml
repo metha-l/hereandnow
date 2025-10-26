@@ -1,0 +1,19 @@
+name: 🧹 Chore
+description: 리팩토링/빌드/문서 등 지원 작업
+labels: [chore]
+title: "[CHORE] "
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: "## 💼 작업 설명"
+      placeholder: 예) ESLint 규칙 정리, Vercel 빌드 캐시 설정
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: "## ✅ To do"
+      value: |
+        - [ ] 
+        - [ ] 

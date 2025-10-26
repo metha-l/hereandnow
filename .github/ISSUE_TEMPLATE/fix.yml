@@ -1,0 +1,28 @@
+name: 🐞 Fix
+description: 버그/오류 수정
+labels: [bug, fix]
+title: "[FIX] "
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: "## 💼 작업 설명"
+      description: 어떤 문제가 발생했는지, 무엇을 고칠지 적어주세요.
+      placeholder: 예) 로그인 버튼 클릭 시 500 에러 발생
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "## 🧪 재현 절차"
+      value: |
+        1. 
+        2. 
+        3. 
+  - type: textarea
+    id: todo
+    attributes:
+      label: "## ✅ To do"
+      value: |
+        - [ ] 
+        - [ ] 
