@@ -3,6 +3,7 @@ name: ✅ Semantic PR Title Check
 on:
   pull_request:
     types: [opened, edited, reopened, synchronize]
+  workflow_dispatch:
 
 jobs:
   check-title:

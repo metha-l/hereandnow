@@ -1,0 +1,34 @@
+# name: description | color(hex)
+- name: feat
+  color: "1f883d"
+  description: New feature
+- name: fix
+  color: "d73a4a"
+  description: Bug fix
+- name: chore
+  color: "cfd3d7"
+  description: Build/infra/maintenance
+- name: docs
+  color: "0e8a16"
+  description: Documentation
+- name: refactor
+  color: "a2eeef"
+  description: Refactor code
+- name: test
+  color: "bfe5bf"
+  description: Tests
+- name: build
+  color: "5319e7"
+  description: CI/CD, build
+- name: hotfix
+  color: "e99695"
+  description: Emergency fix
+- name: enhancement
+  color: "84b6eb"
+  description: General improvement
+- name: bug
+  color: "ee0701"
+  description: Bug
+- name: documentation
+  color: "5319e7"
+  description: Docs
