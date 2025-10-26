@@ -1,0 +1,17 @@
+# 제목/본문에 따라 자동으로 라벨 부착
+"feat":
+  - '\[FEAT\]'
+"fix":
+  - '\[FIX\]'
+"chore":
+  - '\[CHORE\]'
+"docs":
+  - '\[DOCS\]'
+"refactor":
+  - '\[REFACTOR\]'
+"test":
+  - '\[TEST\]'
+"build":
+  - '\[BUILD\]'
+"hotfix":
+  - '\[HOTFIX\]'

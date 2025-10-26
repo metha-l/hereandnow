@@ -1,0 +1,24 @@
+name: ✅ Semantic PR Title Check
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  check-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR title
+        uses: amannn/action-semantic-pull-request@v5
+        with:
+          types: |
+            FEAT
+            FIX
+            CHORE
+            DOCS
+            TEST
+            REFACTOR
+            BUILD
+            HOTFIX
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

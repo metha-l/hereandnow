@@ -1,0 +1,23 @@
+name: 🏷️ Auto Labeler
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply labels based on title
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          labels: |
+            ${{ github.event.pull_request.title || github.event.issue.title }}
+      - name: Set labels
+        uses: actions-ecosystem/action-labeler@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
